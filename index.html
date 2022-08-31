@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        textarea{
+            width: 40%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 720px) {
+            textarea {
+                width: 80%;
+            }
+        }
+    </style>
+    <title>DOM</title>
+</head>
+<body>
+    <textarea id="input" rows="10" style="resize:none ;"></textarea>
+    <p>Length of Char : <span id="lengthChar"></span></p>
+    <p>Length of Word : <span id="lengthWord"></span></p>
+</body>
+<script src="script.js"></script>
+</html>
